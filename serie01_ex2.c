@@ -50,4 +50,3 @@ int getSmallerElement(int* tab, int size, int n)
             temp = i;;
     return temp;
 }
-
