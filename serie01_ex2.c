@@ -28,15 +28,10 @@ void printTab(int* tab, int size)
 void mySort(int* tab, int size)
 {
     int i = 0;
-    int n = 0;
     for(i; i < size; i++)
     {
-        if(n < size)
-        {
-            int a = getSmallerElement(tab,size,n);
-            switchElement(a, n, tab);
-            n+=1;
-        }
+        int a = getSmallerElement(tab,size,i);
+        switchElement(a, i, tab);
     }
 }
 void switchElement(int a, int b, int* tab)
